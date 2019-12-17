@@ -8,7 +8,8 @@ def PointsInCircum(r):
     return [(int(25+ math.cos(2*pi/1000*x)*r),int(25+ math.sin(2*pi/1000*x)*r)) for x in range(0,1000+1)]
 
 def Rings(r):
-    return [(int((x-0)**2/3**2),int((y-0)**2/1**2)) for x,y in range(0,1000+1)]
+    #does not work
+    return [(int((x-0)**2/25**2),int((x-0)**2/29**2)) for x in range(0,1000+1)]
 
 final_image = [["  " for x in range(f_len)] for y in range(f_wid)]
 
